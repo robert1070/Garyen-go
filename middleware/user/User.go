@@ -1,4 +1,4 @@
-package jwt
+package user
 
 import (
 	"Garyen-go/utils"
@@ -13,9 +13,6 @@ type jwtPayload struct {
 	Role string `json:"role"`
 }
 
-const (
-	USER = "user"
-)
 
 func User() gin.HandlerFunc {
 	return func(c *gin.Context) {
@@ -43,7 +40,7 @@ func User() gin.HandlerFunc {
 			return
 		}
 
-		c.Set(USER, jwt)
+		c.Set("user", jwt)
 		c.Next()
 	}
 }

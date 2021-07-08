@@ -1,7 +1,7 @@
 package v1
 
 import (
-	"Garyen-go/service/vo"
+	"Garyen-go/service/dms/vo"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

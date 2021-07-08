@@ -4,7 +4,6 @@ import (
 	"Garyen-go/pkg/setting"
 	"Garyen-go/router"
 	"fmt"
-	"log"
 	"net/http"
 )
 
@@ -20,7 +19,5 @@ func main() {
 		MaxHeaderBytes: 1 << 20,
 	}
 
-	if err := s.ListenAndServe(); err != nil {
-		log.Printf("start http server failed, err: %s", err)
-	}
+	_ = s.ListenAndServe()
 }

@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	db  *gorm.DB
+	DB  *gorm.DB
 	err error
 )
 
@@ -27,12 +27,12 @@ func init() {
 	dbName := setting.MySQLDatabase
 
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=true", user, password, host, port, dbName)
-	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Println(err)
 	}
 
-	sqlDB, err := db.DB()
+	sqlDB, err := DB.DB()
 	if err != nil {
 		log.Println(err)
 	}

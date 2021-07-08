@@ -5,23 +5,23 @@
 package core
 
 import (
-	"Garyen-go/model"
-	"Garyen-go/repository/mysql"
+	dms2 "Garyen-go/model/dms"
+	"Garyen-go/repository/mysql/dms"
 )
 
 func NewCoreOrderService() *Service {
 	return &Service{
-		mysql: &mysql.CoreOrderRepo{
+		mysql: &dms.CoreOrderRepo{
 			TableName: "core_order",
 		},
 	}
 }
 
 type Service struct {
-	mysql *mysql.CoreOrderRepo
+	mysql *dms.CoreOrderRepo
 }
 
-func (srv *Service) Create(order *model.CoreOrder) bool {
+func (srv *Service) Create(order *dms2.CoreSQLOrder) bool {
 	_, err := srv.mysql.CreateCoreOrder(order)
 	if err != nil {
 		return false
