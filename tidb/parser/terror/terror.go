@@ -21,7 +21,8 @@ import (
 	"github.com/pingcap/errors"
 	"go.uber.org/zap"
 
-	mysql2 "Garyen-go/tidb/util"
+	"Garyen-go/tidb/mysql"
+	mysql2 "Garyen-go/tidb/mysql"
 )
 
 // Global error instances.

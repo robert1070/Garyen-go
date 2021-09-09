@@ -4,7 +4,9 @@
 **/
 package operator
 
-import "Garyen-go/model/http"
+import (
+	"Garyen-go/proto"
+)
 
 var (
 	_ Operator = &Pager{}
@@ -22,11 +24,11 @@ func (p *Pager) Handler(params ...interface{}) error {
 	}
 
 	for _, param := range params {
-		var page *http.PageRequest
+		var page *proto.PageRequest
 		switch val := param.(type) {
-		case *http.PageRequest:
+		case *proto.PageRequest:
 			page = val
-		case *http.IDAndPageRequest:
+		case *proto.IDAndPageRequest:
 			page = &val.PageRequest
 		default:
 			continue

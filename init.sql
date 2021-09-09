@@ -20,6 +20,7 @@ primary key (id)
 ) engine = innodb default character set = utf8mb4 comment "实例表(实例录入)";
 
 
+
 CREATE TABLE `tb_walnut_apply_db` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键id',
   `sponsor` varchar(24) NOT NULL COMMENT '发起人',

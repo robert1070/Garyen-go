@@ -7,7 +7,15 @@ const (
 	ReadTimeoutSec  = 60
 	WriteTimeoutSec = 60
 	RunMode         = "debug"
-	JwtSecret       = ""
+	JwtSecret       = "fffffdsafsaddfdg"
+)
+
+const (
+	MySQLUser     = "root"
+	MySQLPass     = "root"
+	MySQLPort     = 3306
+	MySQLHost     = "127.0.0.1"
+	MySQLDatabase = "test1"
 )
 
 var (
