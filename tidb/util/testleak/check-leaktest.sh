@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Usage: check-leaktest.sh
-# It needs to run under the gitlab.weipaitang.com/thrones/targaryen directory.
+# It needs to run under the wpt/thrones/targaryen directory.
 
 set -e
 

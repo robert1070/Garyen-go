@@ -28,13 +28,13 @@ package parser
 import (
 	"strings"
 
-	"gitlab.weipaitang.com/Garyen-go/tidb/mysql"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/ast"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/model"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/opcode"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/auth"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/charset"
-	"gitlab.weipaitang.com/Garyen-go/tidb/parser/types"
+	"Garyen-go/tidb/mysql"
+	"Garyen-go/tidb/parser/ast"
+	"Garyen-go/tidb/parser/model"
+	"Garyen-go/tidb/parser/opcode"
+	"Garyen-go/tidb/parser/auth"
+	"Garyen-go/tidb/parser/charset"
+	"Garyen-go/tidb/parser/types"
 )
 
 %}

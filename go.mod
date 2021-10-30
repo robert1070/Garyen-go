@@ -1,6 +1,6 @@
 module Garyen-go
 
-go 1.14
+go 1.16
 
 require (
 	github.com/cznic/golex v0.0.0-20181122101858-9c343928389c // indirect
